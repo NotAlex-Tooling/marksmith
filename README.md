@@ -10,7 +10,7 @@ A client-side bookmark manager for building, organizing, and exporting browser b
 
 ## Overview
 
-Marksmith turns a messy pile of bookmarks into a tidy, drag-and-drop tree. Everything runs in your browser (nothing is sent to a server) and you can import and export the standard Netscape HTML format that Chrome, Firefox, Safari, and Edge all understand.
+Marksmith turns a messy pile of bookmarks into a tidy, drag-and-drop tree. Everything runs in your browser — nothing is sent to a server — and you can import and export the standard Netscape HTML format that Chrome, Firefox, Safari, and Edge all understand.
 
 ## Features
 
@@ -52,3 +52,15 @@ On macOS, use `Cmd` instead of `Ctrl`.
 - The tree and icons are stored under separate keys, so an icon-storage hiccup never costs you your bookmarks.
 - Dead-link checking runs from the browser, so for cross-origin links it can only reliably detect hard network failures. A live page that returns a 404 may still look reachable, so treat results as a hint.
 - Dragging between folders in the tree works, but the "move to…" picker is the most reliable and keyboard-accessible way to move items.
+
+## Development
+
+```bash
+npm install        # install dependencies
+npm run dev        # start the dev server
+npm run check      # type-check (svelte-check)
+npm test           # run unit tests (vitest)
+npm run lint       # lint (eslint)
+npm run format     # format (prettier)
+npm run build      # production build
+```

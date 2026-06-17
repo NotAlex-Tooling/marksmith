@@ -109,6 +109,24 @@
     </main>
   </div>
 
+  <footer
+    class="flex flex-shrink-0 items-center justify-center gap-2 border-t border-border px-3 py-1.5 text-[11px] text-text-tertiary"
+  >
+    <a
+      href="https://github.com/NotAlex-Tooling/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition-colors hover:text-accent">Tooling by NotAlex</a
+    >
+    <span aria-hidden="true">·</span>
+    <a
+      href="https://github.com/NotAlex-Tooling/marksmith"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition-colors hover:text-accent">source code</a
+    >
+  </footer>
+
   <Modal {store} />
   <ToastContainer {store} />
 </div>
